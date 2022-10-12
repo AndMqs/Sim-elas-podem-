@@ -1,0 +1,41 @@
+1)   	
+
+#include <iostream> 
+using namespace std;
+int main()
+{
+	int x,y;
+	cin >> x;
+	cin >> y;
+    cout<<"x = "<<x+y<<endl;
+	    return 0;
+}
+—------------------------------------------------------------------------------------------------------------------ 
+2)
+
+#include <iostream> 
+using namespace std;
+int main()
+{
+	int x,y;
+	cin >> x;
+	cin >> y;
+    cout<<"PROD = "<<x*y<<endl;
+       return 0;
+}
+ —--------------------------------------------------------------------------------------------------------------
+3)  
+
+#include <iostream> 
+using namespace std;
+int main()
+{
+	int A,B,C,D;
+	cin >> A;
+	cin >> B;
+	cin >> C;
+	cin>> D;
+    cout<<"DIFERENÇA = "<<(A*B-C*D)<<endl;
+	
+	return 0;
+}
