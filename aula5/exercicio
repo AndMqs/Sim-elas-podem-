@@ -1,0 +1,93 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int sim=0,nao=0;
+    char opcao;
+    cout<<"<< Descubra seu nível de estresse! >>"<<endl;
+    cout<<"Responda quais dos eventos abaixo você vivenciou no último ano utilizando 's' para sim ou 'n' para não."<<endl;
+    cout<<"1) Morte de um amigo próximo: "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+    cout<<"2) Separacao ou divórcio: "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+    cout<<"3) Casamento: "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+    cout<<"4) Demissão: "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+    cout<<"5) Mudança significativa na situacao financeira (para melhor ou pior): "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+    cout<<"6) Mudança de área de atuacão profissional: "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+    cout<<"7) Mudanças significativas no nº de horas trabalhadas ou nas condicões de trabalho: "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+    cout<<"8) Mudança significativa no tipo ou quantidade de tempo livre: "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+    cout<<"9) Começo ou término de atividade acadêmica (estudos): "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+    cout<<"10) Problemas com os sogros: "; cin>>opcao;
+      if(opcao=='s'){
+        sim=sim+1;
+    }
+    else if(opcao=='n'){
+        nao=nao+1;
+    }
+   
+    cout<<" <<< Resultado >>> "<<endl;
+    cout<<"Respostas Positivas: "<<sim<<endl;
+    cout<<"Respostas Negativas: "<<nao<<endl;
+    
+    if(sim<=3){
+        cout<<"Stress Baixo!"<<endl;
+    }
+    else if((sim>=4)||(sim<=6)){
+        cout<<"Stress Mediano!"<<endl;
+    }
+    else if(sim>=7){
+        cout<<"Stress Elevado!"<<endl;
