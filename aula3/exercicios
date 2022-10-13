@@ -1,0 +1,72 @@
+1)
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    int a, b, x, y;
+    float c, w, total;
+    cin >> a >> b >> c >> x >> y >> w;
+    total = b * c + y * w;
+    cout <<"Valor a pagar: R$ " <<fixed << setprecision (2) << total << endl; 
+
+    return 0;
+}
+
+—--------------------------------------------------------------------------------------------------
+
+2)
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+   int x, y;
+   double x1 = 4.00, x2 = 4.50, x3 = 5.00, x4 = 2.00, x5 = 1.50, total;
+   cin >> x >> y;
+   if (x == 1){
+       total = x1*y;
+   } else if (x == 2){
+       total = x2*y;
+   } else if (x == 3){
+       total = x3*y;
+   } else if (x == 4){
+       total = x4*y;
+   } else if (x == 5){
+       total = x5*y;
+   }
+    
+    cout << "Total: R$" << fixed << setprecision (2) << total << endl;
+ 
+    return 0;
+}
+
+—---------------------------------------------------------------------------------------------------------
+3)
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+   int x;
+   float y, y1 = 12.00, y2 = 17.00, y3 = 25.00, total;
+   cin >> x >> y;
+   if (x == 1){
+       total = y1*y;
+   } else if (x == 2){
+       total = y2*y;
+   } else if (x == 3){
+       total = y3*y;
+   } 
+    
+    cout << "Salario: R$ " << fixed << setprecision (2) << total << endl;
+ 
+
+    return 0;
+}
