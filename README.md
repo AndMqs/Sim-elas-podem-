@@ -25,11 +25,11 @@ Esse repósitório consiste em um compilado de informações para auxiliar na jo
 **Aula 5**
 - Estruturas de repetição: comando while
 
-**Aula 6**
+**Aula 6 e 7**
 - Estruturas de repetição: comando "for" e "repeat
 
-**Aula 7 e 8**
-- Desenvolvimento do projeto
+**Aula 8**
+- Desenvolvimento do projeto; Exercício final
 
 <br />
 
