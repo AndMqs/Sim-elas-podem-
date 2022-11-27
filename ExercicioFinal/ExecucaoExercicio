@@ -1,0 +1,79 @@
+/******************************************************************************
+Pedra, Papel e Tesoura
+*******************************************************************************/
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    char seguir = 's';
+    int opcao, pc;
+    int vitoria = 0;
+    
+    cout << "****** Quer jogar comigo? ******" << endl;
+    
+    while(seguir == 's'){
+        cout << "  " << endl;
+        cout << "Digite o número da opção desejada: 1 = Pedra, 2 = Papel ou 3 = Tesoura: ";
+        cin >> opcao;
+        srand((time(NULL)));
+        pc = rand()% 3 + 1; //1 = pedra; 2 = papel; 3 = tesoura
+        
+        if(opcao == 1 && pc == 2){
+            cout << "    "<< endl;
+            cout << "Escolho pedra!" << endl;
+            cout << "Você ganhou dessa vez --'... Parabéns!" << endl;
+            vitoria++;
+            
+        }else if(opcao==1 && pc==3){
+            cout << "Escolho tesoura!" << endl;
+            cout << "Você perdeeu! Não foi dessa vez..." << endl;
+            
+        }else if(opcao==1 && pc==1){
+            cout << "Escolho pedra!" << endl;
+            cout << "Viish... Deu empate :/" << endl;
+            
+            
+        }else if(opcao == 2 && pc == 1){
+            cout << "Escolho pedra!" << endl;
+            cout << "Você ganhou dessa vez --'... Parabéns!" << endl;
+            vitoria++;
+            
+        }else if(opcao==2 && pc==3) {
+            cout << "Escolho tesoura!" << endl;
+            cout << "Você perdeeu! Não foi dessa vez..." << endl;
+            
+        }else if(opcao==2 && pc==2){
+            cout << "Escolho papel!" << endl;
+            cout << "Viish... Deu empate :/" << endl;
+        
+        
+        }else if(opcao == 3 && pc == 2){
+            cout << "Escolho papel!" << endl;
+            cout << "Você ganhou dessa vez --'... Parabéns!" << endl;
+            vitoria++;
+            
+        }else if(opcao==3 && pc==1){
+            cout << "Escolho pedra!" << endl;
+            cout << "Você perdeeu! Não foi dessa vez..." << endl;
+            
+        }else if(opcao==3 && pc==3){
+            cout << "Escolho tesoura!" << endl;
+            cout << "Viish... Deu empate :/" << endl;
+        
+            
+        } cout << "Deseja continuar? Digite 's' para sim ou 'n' para não: ";
+          cin >> seguir;
+          cout << " " << endl;
+        
+    } 
+    
+    
+cout << "Foi bom jogar com Você!" << endl;
+cout << "Você ganhou " << vitoria << " vezes!"<< endl;
+    
+        
+    return 0;
+}
+
